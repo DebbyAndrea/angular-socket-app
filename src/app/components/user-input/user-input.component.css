@@ -1,0 +1,18 @@
+.userInput {
+    display: flex;
+    position: absolute;
+    bottom: 1%;
+    width: 95%;
+    justify-content: center;
+}
+
+.textArea {
+    display: flex;
+    width: 80%;
+    margin-right: 2%;
+}
+
+.sendButton {
+    display: flex;
+    cursor: pointer;
+}

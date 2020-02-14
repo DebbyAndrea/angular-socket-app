@@ -1,0 +1,26 @@
+<div>
+    <p class="headings">Enter your Name:</p>
+    <form class="getUserName">
+        <input class="textArea" name="userName" type="text" placeholder="Your name" required [(ngModel)]="userName">
+    </form>
+
+    <p class="headings">Receiving end: </p>
+    <form class="radioButtonsForm" [formGroup] = "getReceiverOption" >
+        <input class="radioButtons" type="radio" formControlName="receiver" value="Existing"> Existing
+        <input class="radioButtons" type="radio" formControlName="receiver" value="New"> New
+    </form>
+
+    <form [formGroup] = "getReceiverName" >
+        <select class="dropdown" formControlName="selectreceiverName" *ngIf="getReceiverOption.value.receiver === 'Existing'" >
+            <option value="Ankit">Ankit</option>
+            <option value="Durga">Durga</option>
+            <option value="Debby">Debby</option>
+        </select>
+    </form>    
+
+    <form *ngIf="getReceiverOption.value.receiver === 'New'">
+        <input class="textArea" value="" name="receiverName" type="text" placeholder="Enter new receiver name" required [(ngModel)]="receiverName">    
+    </form>
+    <input class="submitButton" type="button" value="Submit" (click)="onSubmit()" [disabled]="!(userName && (receiverName || getReceiverName.value.selectreceiverName))">
+
+</div>
