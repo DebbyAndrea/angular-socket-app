@@ -12,6 +12,7 @@
 
     <form [formGroup] = "getReceiverName" >
         <select class="dropdown" formControlName="selectreceiverName" *ngIf="getReceiverOption.value.receiver === 'Existing'" >
+            <option value="" hidden disabled selected>Select one</option>
             <option value="Ankit">Ankit</option>
             <option value="Durga">Durga</option>
             <option value="Debby">Debby</option>

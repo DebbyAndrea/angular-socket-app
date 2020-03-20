@@ -1,6 +1,7 @@
 .headings {
     color: #4576e9;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: #c4d4fa 5px 5px 10px;
 }
 
 .textArea, .dropdown{
@@ -13,6 +14,7 @@
     background-color: #e5edff;
     padding: 3%;
     margin-bottom: 3%;
+    box-shadow: rgb(184, 184, 184) 5px 5px 10px;
 }
 
 .radioButtonsForm {
@@ -22,6 +24,10 @@
 .submitButton:disabled {
     background-color: grey;
     cursor: auto;
+}
+
+.submitButton:disabled:hover {
+    background-color: grey;
 }
 
 .submitButton {
@@ -35,5 +41,10 @@
     border: none;
     outline: none;
     border-radius: 5px;
+    box-shadow: rgb(184, 184, 184) 5px 5px 10px;
     cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #5780e0;
 }

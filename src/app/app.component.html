@@ -1,6 +1,7 @@
 <div class="outline">
-  <div class="header"></div>
-  <h3>{{obj.userName}}</h3>
+  <div class="header">
+    <h3>{{obj.userName}}</h3>
+  </div>
   <div class="userName" *ngIf = "userName == 0">
     <app-get-user-details (userData)="getUserData($event)"></app-get-user-details>  
   </div>
