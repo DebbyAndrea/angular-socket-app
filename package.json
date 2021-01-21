@@ -31,7 +31,7 @@
     "http": "0.0.0",
     "ngrok": "^3.2.7",
     "nodemon": "^2.0.2",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.1",
